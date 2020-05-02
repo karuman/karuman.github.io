@@ -1,6 +1,6 @@
-// ServiceWorker処理：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
+// ServiceWorkerProc：https://developers.google.com/web/fundamentals/primers/service-workers/?hl=ja
 
-// キャッシュ名とキャッシュファイルの指定
+// Cache and File
 var CACHE_NAME = 'pwa-sample-caches';
 var urlsToCache = [
     '/pwa/',
@@ -8,7 +8,7 @@ var urlsToCache = [
     '/pwa/drawer.js'
 ];
 
-// インストール処理
+// Install Process
 self.addEventListener('install', function(event) {
     event.waitUntil(
         caches
@@ -19,7 +19,7 @@ self.addEventListener('install', function(event) {
     );
 });
 
-// リソースフェッチ時のキャッシュロード処理
+// Re-Load
 self.addEventListener('fetch', function(event) {
     event.respondWith(
         caches
