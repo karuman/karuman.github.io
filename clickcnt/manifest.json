@@ -1,8 +1,0 @@
-{
-  "name":"TAP10",
-  "short_name":"TAP10",
-  "start_url": "clickcnt/index.html?utm_source=homescreen",
-  "display": "standalone",
-  "background_color": "#FFFFFF",
-  "theme_color": "#FFFFFF"
-}
